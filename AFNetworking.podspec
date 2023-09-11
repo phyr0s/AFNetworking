@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name     = 'AFNetworking'
-  s.version  = '3.1.0'
+  s.version  = '3.1.1'
   s.license  = 'MIT'
   s.summary  = 'A delightful iOS and OS X networking framework.'
   s.homepage = 'https://github.com/AFNetworking/AFNetworking'
@@ -27,9 +27,9 @@ Pod::Spec.new do |s|
 EOS
   s.prefix_header_contents = pch_AF
   
-  s.ios.deployment_target = '7.0'
+  s.ios.deployment_target = '13.0'
   s.osx.deployment_target = '10.9'
-  s.watchos.deployment_target = '2.0'
+  s.watchos.deployment_target = '8.0'
   s.tvos.deployment_target = '9.0'
   
   s.subspec 'Serialization' do |ss|
@@ -47,7 +47,7 @@ EOS
   end
 
   s.subspec 'Reachability' do |ss|
-    ss.ios.deployment_target = '7.0'
+    ss.ios.deployment_target = '13.0'
     ss.osx.deployment_target = '10.9'
     ss.tvos.deployment_target = '9.0'
 
